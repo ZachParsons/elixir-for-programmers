@@ -2,6 +2,8 @@ defmodule Procs do
 
   def greeter(count) do
     receive do
+      { :boom, reason } ->
+        exit(reason)
       { :reset } ->
         greeter(count = 0)
       { :add, n } ->
