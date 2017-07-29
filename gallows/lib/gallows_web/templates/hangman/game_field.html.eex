@@ -9,5 +9,8 @@
 </p>
 
 <form>
-  
+  <%= form_for(@conn, hangman_path(@conn, :make_move), [ as: :make_move, method: :put], fn f -> %>
+    <%= text_input(f, :guess) %>
+    <%= submit("Make next move") %>
+  <% end) %>
 </form>

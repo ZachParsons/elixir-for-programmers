@@ -12,4 +12,8 @@ defmodule GallowsWeb.HangmanController do
     |> put_session(:game, game)
     |> render("game_field.html", tally: tally)
   end
+
+  def make_move(conn, params) do
+    raise inspect(params)
+  end
 end
