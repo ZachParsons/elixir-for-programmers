@@ -1,4 +1,4 @@
-defmodule SocketGallows.Web.HangmanChannel do
+defmodule SocketGallowsWeb.HangmanChannel do
 
   use Phoenix.Channel
 
